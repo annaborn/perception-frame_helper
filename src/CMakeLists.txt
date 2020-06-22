@@ -23,8 +23,8 @@ rock_library(${PROJECT_NAME}
         FrameHelper.h
         FrameHelperTypes.h
         FrameQImageConverter.h
-    DEPS_PKGCONFIG base-types opencv jpeg_conversion
-    DEPS_PLAIN 
+    DEPS_PKGCONFIG base-types jpeg_conversion opencv4
+    DEPS_PLAIN
         Boost_REGEX
-    LIBS ${LIBV4l2_LIBRARIES} ${LIBV4l2C_LIBRARIES}
+    LIBS ${LIBV4l2_LIBRARIES} ${LIBV4l2C_LIBRARIES} ${OpenCV_LIBRARIES}
 )
